@@ -1,0 +1,4 @@
+1. Create a Test file for com.TriggerControl.Util.TriggerStateLogWriter.java in com.TriggerControlTest.TriggerStateLogWriterTest.java, it is a Utility class that we testing.
+2. Check for compilation errors in current file
+3. Test this class in a way, those private methods are being used internally, so we only have test one method that uses those private method, and Class that we are speaking about is a component, so when bean is being created, postConstruct() will be called and when bean is getting destroyed, preDestroy() will be called, So we don't need to test that, instead we use make Test class utilize the bean creation process by initializing a container for test environment.
+4. Create application-test.properties in classpath, and a entry for TRIGGER_LOG_FILE_PATH and value from application.properties with the same key.
